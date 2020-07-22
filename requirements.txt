@@ -3,4 +3,4 @@ gunicorn==19.9.0
 numpy>=1.10.4
 pandas>=0.18.0
 pickleshare==0.5
-nltk==3.2
+nltk>=3.2
