@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+    .bottom{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    cellspacing: 20;
+    align: center;
+    }
+</style>
+</head>
+<body>
+       {% for predict in prediction %}
+             {% if predict==1 %}
+				<h1 style="color:green;text-align:center">Great! This is a POSITIVE Review.</h1>
+				
+			{% elif predict==0 %}
+				<h1 style="color:Tomato;text-align:center">Oops! This is a NEGATIVE Review.</h1>
+			
+			{% endif %}
+    {% endfor %}
+
+    
+    <table class="bottom">
+     <tr style="vertical-align:bottom">
+        <th align="center"><h2 style="color:green">Poisitive Reviews:</h2></th>
+        <th align="center"><h2 style="color:red">Negative Reviews:</h2></th>
+     </tr>
+     <tr style="vertical-align:top;text-align:center;font-style:italic">
+        <td><h1>{{p}}</h1></td>
+        <td><h1>{{n}}</h1></td>
+     </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body  align="center" background="{{ url_for('static', filename='final.png') }}" style="height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
+<br>
+<br>
+ <font size="6" color="white"> 
+            Paste the reviews dataset in the box below 
+  </font> 
+ <br>
+<br>
+
+
+<form action="{{ url_for('predict') }}" onsubmit="return valid()" method="POST">
+<textarea name="message" style="width:320px;height:400px;"></textarea>
+<br>
+<br>
+<pre>  <input type="submit" value="PREDICT"  style="height:50px;width:200px">
+<br>
+<pre>  <input type ="reset" value="--RESET--" ></INPUT>  </pre></form>
+ 
+
+</form>
+</body>
+
+</html>
+
